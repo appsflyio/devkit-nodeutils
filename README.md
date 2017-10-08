@@ -5,4 +5,8 @@ The appsfly.io DevKit for Nodejs enables Nodejs developers to easily work with a
 ##
 NPM install the package.
 
-`npm appsflyio-nodejs-util`
+`npm i appsflyio-nodejs-util`
+
+OR
+
+`npm install appsflyio-nodejs-util`
