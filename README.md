@@ -1,4 +1,4 @@
-![appsfly.io util](https://nodei.co/npm/appsflyio-nodejs-util.png)
+![appsfly.io util](https://nodei.co/npm/appsflyio-nodejs-util.png) 
 
 ## appsfly.io DevKit for Nodejs
 
