@@ -17,7 +17,7 @@ module.exports.genChecksum = function(data, key, cb) {
     });
 }
 
-module.exports.verifyChecksum = function(params, key,checksumhash) {
+module.exports.verifyChecksum = function(data, key,checksumhash) {
     var checksum = crypt.decrypt(checksumhash, key);
     var salt = checksum.substr(checksum.length - 4);
     var sha256 = checksum.substr(0, checksum.length - 4);
