@@ -1,11 +1,11 @@
 {
-  "name": "crypto-nodejs",
+  "name": "appsflyio-nodejs-util",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "appsfly.io dba Dhurya Technologies Pvt Ltd",
+  "license": "https://www.apache.org/licenses/LICENSE-2.0"
 }
