@@ -35,6 +35,11 @@ Please contact integrations@appsfly.io for your credientials.
 ### Option 1: SDK
 The SDK can be included to handle authorization. There is no need for you to handle checksum generation and verification.
 
+##### Install
+`npm i appsflyio-nodejs-util --save`
+OR
+`npm install appsflyio-nodejs-util --save`
+
 ##### Configuration
 ```
 var appsflyioUtil = require("appsflyio-nodejs-util");
