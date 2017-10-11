@@ -1,6 +1,6 @@
 {
   "name": "appsflyio-nodejs-util",
-  "version": "0.0.12-beta",
+  "version": "0.0.13-beta",
   "description": "",
   "main": "index.js",
   "scripts": {
