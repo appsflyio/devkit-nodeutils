@@ -1,16 +1,18 @@
 {
   "name": "appsflyio-nodejs-util",
-  "version": "0.0.11-beta",
+  "version": "0.0.12-beta",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository" :
-  {
-    "type" : "git",
-    "url" : "https://github.com/appsflyio/devkit-nodeutils.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/appsflyio/devkit-nodeutils.git"
   },
   "author": "appsfly.io dba Dhurya Technologies Pvt Ltd",
-  "license": "https://www.apache.org/licenses/LICENSE-2.0"
+  "license": "https://www.apache.org/licenses/LICENSE-2.0",
+  "dependencies": {
+    "request": "^2.83.0"
+  }
 }
