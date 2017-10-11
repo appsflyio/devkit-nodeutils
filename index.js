@@ -5,7 +5,7 @@ var util = require('util');
 var crypto = require('crypto');
 
 module.exports.genChecksum = function(data, key, cb) {
-    crypt.gen_salt(4, function (err, salt) {
+    crypt.gen_salt(8, function (err, salt) {
         var sha256 = crypto.createHash('sha256').update(salt+data).digest('hex');
         var check_sum = sha256+salt;
         cb(undefined, crypt.encrypt(check_sum, key));

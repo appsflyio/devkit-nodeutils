@@ -1,8 +1,9 @@
 var util = require("./index");
 
 // // Generate Checksum
-util.genChecksum("test", "1234567890123456", function (err, checksum) {
-    console.log(util.verifyChecksum("test", "1234567890123456", "KUl9Uchy4CofX023RHzMHP20UYntr0OqLtNjdm6drrutPUkxgtk1PlegVhhaPrX1GUqG7dEZsOTq1GhORMKrC5sXpYv7XJDOrWCK4e7p8SI="));
+util.genChecksum("testasdasdf", "1234567890123456", function (err, checksum) {
+    // console.log(checksum);
+    console.log(util.verifyChecksum("testasdasdf", "1234567890123456", "Bw93+j90mwhMMapUKf3zGzK268MFx14KMfejaBnkAyU+ryXH5VZpt3+AF7oJi0KROI5lcxfTX5rmCkcGJEF4s3L71204g2Lut74EnGJRuvY="));
 });
 
 
