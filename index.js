@@ -16,12 +16,6 @@ module.exports.verifyChecksum = function(data, key,checksumhash) {
     var checksum = crypt.decrypt(checksumhash, key);
     var salt = checksum.slice(checksum.length-8, checksum.length);
     var sha256 = checksum.slice(0, checksum.length - 8);
-    console.log(salt+data);
     var hash = crypto.createHash('sha256').update(salt+data).digest("hex");
-    if (hash === sha256) {
-        return true;
-    } else {
-        util.log("checksum is wrong");
-        return false;
-    }
+    return (hash === sha256);
 }
