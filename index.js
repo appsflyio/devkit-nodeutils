@@ -13,9 +13,13 @@ module.exports.genChecksum = function(data, key, cb) {
 }
 
 module.exports.verifyChecksum = function(data, key,checksumhash) {
-    var checksum = crypt.decrypt(checksumhash, key);
-    var salt = checksum.slice(checksum.length-8, checksum.length);
-    var sha256 = checksum.slice(0, checksum.length - 8);
-    var hash = crypto.createHash('sha256').update(salt+data).digest("hex");
-    return (hash === sha256);
+    try{
+        var checksum = crypt.decrypt(checksumhash, key);
+        var salt = checksum.slice(checksum.length-8, checksum.length);
+        var sha256 = checksum.slice(0, checksum.length - 8);
+        var hash = crypto.createHash('sha256').update(salt+data).digest("hex");
+        return (hash === sha256);
+    }catch(err){
+        return false;
+    }
 }
