@@ -37,21 +37,15 @@ The SDK can be included to handle authorization. There is no need for you to han
 
 ##### Configuration
 ```
-AppInstance.AFConfig config = new AppInstance.AFConfig("EXECUTOR_URL", "SECRET_KEY", "APP_KEY");
+var appsflyioUtil = require("appsflyio-nodejs-util");
+var app = new appsflyioUtil.AppInstance({executorUrl:"EXECUTOR_URL", secret:"SECRET_KEY", appKey:"APP_KEY"});
 ```  
 ##### Execution
 ```
-AppInstance travelProvider = new AppInstance(config, "MODULE_HANDLE");
-travelProvider.exec("INTENT", JSONObject("PAYLOAD"), "UUID", new Callback() {
-    @Override
-    public void onResponse(JSONObject response) {
-        // We have already verified the checksum from you
-    }
-
-    @Override
-    public void onError(JSONObject error) {
-      // Handle error
-    }
+app.exec("MODULE_HANDLE", "INTENT", JSON.parse(PAYLOAD), UUID).then(function(result){
+ //Handle Result
+}).else(function(error){
+ //Handle Error
 });
 ```
 
