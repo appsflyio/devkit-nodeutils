@@ -43,11 +43,7 @@ module.exports = {
         }
         var decipher = crypto.createDecipheriv('AES-' + algo + '-CBC', key, iv);
         var decrypted = decipher.update(data, 'base64', 'binary');
-        try {
-            decrypted += decipher.final('binary');
-        } catch (e) {
-            util.log(util.inspect(e));
-        }
+        decrypted += decipher.final('binary');
         return decrypted;
     },
 
