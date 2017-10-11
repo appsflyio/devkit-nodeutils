@@ -41,7 +41,7 @@ AppInstance.prototype.exec = function(micromodule_id, intent, payload, userID){
         module.exports.ChecksumUtils.genChecksum(payload, this.config.secret, function (err, checksum) {
             if(!err){
                 request.post({
-                    url:this.config.repoUrl + "/executor/exec",
+                    url:this.config.executorUrl + "/executor/exec",
                     method:"POST",
                     json:body,
                     headers:{
