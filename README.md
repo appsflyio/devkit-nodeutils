@@ -1,4 +1,4 @@
-# About appsfly.io Dev Kit Java Utils
+# About appsfly.io Dev Kit Node Utils
 This library contains resources to help communicate with appsfly.io execution server.
 For all communications with execution server, your application should be registered and a secret key needs to be generated. 
 
@@ -53,7 +53,7 @@ app.exec("MODULE_HANDLE", "INTENT", JSON.parse(PAYLOAD), UUID).then(function(res
 appsfly.io exposes a single API endpoint to access Microservices directly.
 
 ##### Endpoint
-https://microapps.appsfly.io/executor/exec
+[EXECUTOR_URL](#EXECUTOR_URL)/executor/exec
 
 ##### Method
 POST
